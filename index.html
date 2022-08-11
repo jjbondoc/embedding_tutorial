@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2S 2 Embedding Tutorial</title>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <!-- Borrow API asset from Tableau Public.-->
+    <style>
+      .center {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World! ✨¯\_(ツ)_/¯ ROFL</h1>
+    <button id="exportPDF">Export PDF</button>
+    <div class="center">
+      <button id="exportPP">Export PowerPoint</button>
+    </div>
+    <h2>Filters go here</h2>
+    <input type="number" placeholder="Min Value" id="minValue" />
+    <input type="number" placeholder="Max Value" id="maxValue" />
+    <button id="filterButton">Filter</button>
+    <div id="vizContainer"></div>
+    <!--Provides a space for the viz to live in.-->
+    <!-- The below line will allows us to use the API script using JavaScript.-->
+    <script src="./app.js"></script>
+    <!--JavaScript usually added at the bottom as the HTML needs to load first before JS-->
+  </body>
+</html>
